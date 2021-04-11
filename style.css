@@ -6,41 +6,38 @@
 
 :root {
     --tamil-font: 'Mukta Malar', sans-serif;
-    --normal-font: 'Poppins', sans-serif;
-  }
+    --heading-font: 'Poppins', sans-serif;
+    --normal-font: 'Source Sans Pro', sans-serif;
+}
 
 #more {display: none;}
 
 body{
-    background-color: #fff5ee;
+    background-color: #fffae8;
 }
 nav{
-    background-color: #FFC4A3;
+    background-color: #FF5A5A;
     padding: 15px 0;
 }
-nav div{
+nav > div{
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-nav div span{
-    vertical-align: middle;
-    font-size: 20px;
-    font-family: poppins;
+nav > div > span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--heading-font);
 }
-nav div ul{
-    vertical-align: middle;
-    list-style: none;
-    display: inline-block;
-}
-nav div ul li{
-    float: right;
-    margin: 0 10px;
-}
-nav div ul li img{
+nav > div > a > svg {
     max-width: 35px;
     height: auto;
+    fill: #fff;
 }
 /* header */
 header{
@@ -48,24 +45,26 @@ header{
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    padding: 0 30px;
 }
 .header-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.header-text h1{
+.header-text > h1{
     font-size: 60px;
     font-family: var(--tamil-font);
     font-weight: 700;
 }
 .header-text > div {
-    margin: 35px 0;
+    margin: 35px 0 50px 0;
 }
 .header-text > div > p{
     font-size: 20px;
     font-family: var(--tamil-font);
     font-weight: 400;
+    padding-right: 30px;
 }
 .header-text > div > button{
     background-color: rgb(255, 237, 155);
@@ -76,39 +75,130 @@ header{
     font-weight: 500;
     font-family: var(--normal-font);
 }
-.header-text a{
+.header-text > .a-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header-text > .a-btn > strong{
+    margin-right: 30px;
+    font-family: var(--normal-font);
+    font-weight: 500;
+    font-size: 20px;
+}
+.header-text > .a-btn > a{
     background-color: #FFDFC7;
-    padding: 15px;
+    padding: 8px 15px;
     border-radius: 30px;
     color: #000;
     text-align: center;
     font-size: 20px;
     font-family: var(--normal-font);
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
-    max-width: 150px;
+    max-width: 280px;
 }
-.header-image img{
+.header-image > h1{
+    display: none;
+}
+.header-image .image-slider{
     max-width: 450px;
-    height: auto;
-    margin-top: 25px;
+    margin-top: 30px;
 }
-/* feedback */
-.feedback{
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+.header-image .image-slider img{
+    max-width: 450px;
+}
+/* whatsapp */
+.whatsapp{
+    max-width: 430px;
+    margin: 50px auto 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    background-color: #c3ffd5;
+    padding: 10px 0;
+    border-radius: 50px;
 }
-.feedback > h2{
+.whatsapp > small{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.whatsapp > a > svg{
+    width: 50px;
+    height: auto;  
+}
+/* book detials */
+.book-detials{
+    background-color: #ffecdf;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+.book-detials h2{
     text-align: center;
     font-size: 30px;
     font-family: var(--normal-font);
     font-weight: 400;
+    margin-bottom: 30px;
+}
+.book-detials .book-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.book-detials .book-grid div{
+    padding: 20px;
+}
+.book-detials > .book-grid > div > .t-1{
+    padding: 1px;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--normal-font);
+    font-weight: 400;
+    margin: 0;
+
+}
+.book-detials > .book-grid > div > .t-2{
+    padding: 1px;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--normal-font);
+    font-weight: 300;
+    margin: 0;
+
+}
+
+/* feedback */
+.feedback{
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.feedback > div{
+    text-align: center;
+}
+.feedback > div > h2{
+    font-size: 30px;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.feedback > div > a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: bisque;
+    color: black;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    border-radius: 30px;
+    font-size: 15px;
 }
 .feedback > form{
     display: block;
@@ -151,79 +241,182 @@ header{
     border: 3px solid #fff;
     color: #fff;
 }
-
-/* book detials */
-.book-detials{
-    background-color: #ffecdf;
-    margin-top: 50px;
-    padding: 30px 0;
+/* customer feedback */
+.customer-feedback{
+    width: 90%;
+    margin: 20px auto;
+    border: 10px solid #ffb9b9;
+    border-radius: 10px;
 }
-.book-detials h2{
-    text-align: center;
-    font-size: 30px;
-    font-family: var(--normal-font);
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-.book-detials .img-grid{
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.book-detials .img-grid div:not(:last-child){
-    border-right: 2px solid #000;
-}
-.book-detials .img-grid div{
-    padding: 5px 20px;
-}
-.book-detials .img-grid div .t-1,.t-2{
-    padding: 5px;
-    text-align: center;
-    font-size: 20px;
-    font-family: var(--normal-font);
-    font-weight: 400;
-
-}
-/* preview */
-.preview{
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-}
-.preview h2{
-    text-align: center;
-    font-size: 30px;
-    font-family: var(--normal-font);
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-.preview .row-1{
-    display: flex;
-    justify-content: space-around;
-
-}
-.preview .row-1 img{
-    margin: 5px;
-    border-radius: 25px;
-    width: auto;
-    height: 400px;
+.customer-feedback iframe{
+    width: 100%;
 }
 /* footer */
 footer{
     background-color: #393939;
-    margin-top: 50px;
-    padding-bottom: 40px;
 }
 footer .footer-container{
     max-width: 1300px;
+    padding: 30px 0;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-footer .footer-container h3{
+footer .footer-container h5{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #FFC4A3;
+    text-align: center;
+}
+footer .footer-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer-container div p{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFC4A3;
+    text-align: center;
+    margin: 0;
+}
+footer .footer-container div strong{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFC4A3;
+    text-align: center;
+    margin: 15px 0 0 0;
+
+}
+footer .footer-container div img{
+    width: 100px;
+    height: auto;
+    border: 3px solid #fff;
+    margin: 30px 0;
+}
+
+
+@media only screen and (max-width: 1100px){
+    header{
+        flex-flow: column-reverse;
+        padding: 0 20px;
+    }
+    .header-image{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-image > h1{
+        display: block;
+        font-family: var(--tamil-font);
+        font-weight: 700;
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .header-text > h1{
+        display: none;
+    }
+    .header-text > div{
+        margin-bottom: 30px;
+    }
+    .header-text > div > p{
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    nav {
+        padding: 10px 0;
+    }
+    nav > div > span{
+        font-size: 22px;
+    }
+    nav > div > a > svg{
+        max-width: 32px;
+    }
+    header {
+        padding: 0 20px;
+    }
+
+    .header-image > h1{
+        font-size: 40px;
+        text-align: center;
+    }    
+    .book-detials > .book-grid > div {
+        width: 45%;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+    .feedback > div{
+        margin-bottom: 30px;
+    }
+    footer .footer-container h5{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    footer .footer-container{
+        flex-direction: column;
+    }
+    footer .footer-container{
+      width: 90%;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .header-image > h1{
+        font-size: 30px;
+    } 
+    .header-image > .image-slider{
+        max-width: 350px;
+        margin-top: 20px;
+    } 
+    .header-image > .image-slider img{
+        max-width: 350px;
+    }
+    .whatsapp{
+        max-width: 330px;
+    }
+    footer .footer-container h5{
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 400px){
+
+    .header-image > .image-slider{
+        max-width: 300px;
+    } 
+    .header-image > .image-slider img{
+        max-width: 300px;
+    }
+    
+    .header-text > div > p{
+        font-size: 16px;
+    }
+    .header-text > .a-btn > strong{
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .header-text > .a-btn > a{
+        font-size: 17px;
+    }
+    .whatsapp > a > svg{
+        width: 45px;
+    }
+  }
+
+
+
+  /* footer .footer-container h3{
     color: #FFF5EE;
     text-align: center;
     font-size: 25px;
@@ -270,4 +463,4 @@ footer .footer-container form > button{
 }
 footer .footer-container form > button:hover{
     border: 3px solid #ffffff;
-}
+} */
