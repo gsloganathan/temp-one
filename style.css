@@ -140,7 +140,7 @@ header{
     font-size: 30px;
     font-family: var(--normal-font);
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .book-detials .book-grid{
     display: flex;
@@ -211,7 +211,7 @@ header{
     font-size: 20px;
     color: #FFC4A3;
     font-family: var(--normal-font);
-    font-weight: 500;
+    font-weight: 400;
 }
 .feedback > form > input{
     border-bottom: 3px solid #FFC4A3;
@@ -251,6 +251,15 @@ header{
 .customer-feedback iframe{
     width: 100%;
 }
+#iframe{
+    text-align: center;
+    margin: 40px 0;
+}
+#iframe > h4{
+    font-family: var(--heading-font);
+    font-size: 33px;
+    font-weight: 500;
+}
 /* footer */
 footer{
     background-color: #393939;
@@ -270,6 +279,7 @@ footer .footer-container h5{
     font-size: 30px;
     line-height: 1.5;
     color: #FFC4A3;
+    width: 40%;
     text-align: center;
 }
 footer .footer-container div{
@@ -329,6 +339,13 @@ footer .footer-container div img{
     .header-text > div > p{
         padding-right: 0px;
     }
+    footer .footer-container{
+        width: 90%;
+        flex-direction: column;
+      }
+    footer .footer-container h5{
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 700px) {
     nav {
@@ -361,13 +378,7 @@ footer .footer-container div img{
         font-size: 25px;
         margin-bottom: 25px;
     }
-    footer .footer-container{
-        flex-direction: column;
-    }
-    footer .footer-container{
-      width: 90%;
-    }
-
+   
   }
 
   @media only screen and (max-width: 600px){
