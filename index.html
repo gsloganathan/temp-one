@@ -38,7 +38,7 @@
                </svg>
             </a>
             <!-- instagram svg -->
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/loganathan.gs/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" 
                   xmlns:xlink="http://www.w3.org/1999/xlink" 
                   xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" 
@@ -62,7 +62,7 @@
                 </svg>
             </a>
             <!-- Twitter Svg -->
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/GSLoganathan1" target="_blank">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                 	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	width="510px" height="510px" viewBox="0 0 510 510" 
@@ -209,7 +209,7 @@
             <input type="text" name="place" id="place-id">
             <br/>
             <label for="email">Your Experience :</label>
-            <textarea name="message" id=""></textarea>
+            <textarea STYLE='color:#fff;' name="message" id=""></textarea>
             <button type="submit">SEND</button>
         </form>
     </section>
@@ -217,7 +217,7 @@
     <section id="iframe">
         <h4>Reader's Feedback on 📖</h4>
         <div class="customer-feedback">
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTJsT-_SxgGMroTZ2nA3x7zfDO5xAVJ59n5sSGjM9eYdd-gMGxoUA6ljRMtg_yYpPwlMhDwJEDBY_aj/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pubhtml?widget=true&amp;headers=false"></iframe>
         </div>
     </section>
    
@@ -236,13 +236,13 @@
     </footer>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqjACiByXajAaCdl0B2QmIL3R777v71x1HZmiDcXqyTsW7_-v17fLYPS2plcj46Etd/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby33WJnEI1WtzEdgW37dDnqwfoav4KSPk7ztaWYsDz_NLsuqXmH6QLgXHpFnlopZsQ4/exec'
         const form = document.forms['customer-feedback-form']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response), alert("Thanks for your interest, We will contact you shortly.😉"), form.reset())
+            .then(response => console.log('Success!', response), alert("Thanks for your interest 😃."), form.reset())
             // .catch(error => console.error('Error!', error.message), alert("Error"))
         })
 
