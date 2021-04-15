@@ -225,7 +225,7 @@ header{
     display: block;
     border-bottom: 3px solid #FFC4A3;
     width: 100%;
-    height: 50px;
+    height: 90px;
     outline: none;
     background-color: rgba(240, 255, 255, 0);
 }
@@ -244,7 +244,7 @@ header{
     border: 3px solid #fff;
     color: #fff;
 }
-input[type=text], textarea[type=text] {
+input[type=text] {
     color: white;
   }
 
