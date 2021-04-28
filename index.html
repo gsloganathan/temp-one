@@ -294,7 +294,7 @@
     <section class="feedback">
       <div>
         <h2>Unique Experience</h2>
-        <a href="#iframe">See Readers Feedback</a>
+        <a href="#comments">See Readers Feedback</a>
       </div>
       <form name="customer-feedback-form">
         <label for="name">Name :</label>
@@ -307,15 +307,6 @@
         <textarea style="color: #fff" name="message" id=""></textarea>
         <button type="submit">SEND</button>
       </form>
-    </section>
-
-    <section id="iframe">
-      <h4>Reader's Feedback on 📖</h4>
-      <div class="customer-feedback">
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pubhtml?widget=true&amp;headers=false"
-        ></iframe>
-      </div>
     </section>
 
     <footer id="footer">
@@ -336,6 +327,16 @@
       </div>
     </footer>
 
+    <section id="comments" class="comments">
+      <h4>Reader's Feedback on 📖</h4>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycby33WJnEI1WtzEdgW37dDnqwfoav4KSPk7ztaWYsDz_NLsuqXmH6QLgXHpFnlopZsQ4/exec";
@@ -366,12 +367,65 @@
           moreText.style.display = "inline";
         }
       }
+
+      // tabletop js
+      let publicSpreadsheetUrl =
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pubhtml";
+
+      function init() {
+        Tabletop.init({
+          key: "1EnfSon3HCyuysb5-XroE-sVcEJHY1BsJAyBYN1IL9M4",
+          callback: showInfo,
+          simpleSheet: true,
+        });
+      }
+
+      var ele = document.getElementById("comments");
+      function showInfo(data, tabletop) {
+        for (var i = 0; i < data.length; i++) {
+          ele.innerHTML +=
+            "<article><div><strong>" +
+            data[i].name +
+            ",</strong><span>" +
+            data[i].place +
+            "</span></div><p>" +
+            data[i].message +
+            "</p></article>";
+        }
+      }
+      window.addEventListener("DOMContentLoaded", init);
+
+      // document.getElementById("comments").appendChild(
+
+      // document.getElementById("comments").innerHTML =
+      //   "<article><div><strong>" +
+      //   data[1].name +
+      //   ",</strong><span>" +
+      //   data[1].place +
+      //   "</span></div><p>" +
+      //   data[1].message +
+      //   "</p></article>";
+      // document.getElementById("comments").innerHTML =
+      //   "<article><div><strong>" +
+      //   data[2].name +
+      //   ",</strong><span>" +
+      //   data[2].place +
+      //   "</span></div><p>" +
+      //   data[2].message +
+      //   "</p></article>");
+      // // for (var i = 0; i < data.length; i++) {
+      // //   document
+      // //     .getElementById("comments")
+      // //     .appendChild(
+      // //       "<article><div><strong>" +
+      // //         data[i].name +
+      // //         "</strong><span>" +
+      // //         data[i].place +
+      // //         "</span></div><p>" +
+      // //         data[i].message +
+      // //         "</p></article>"
+      // //     );
+      // // }
     </script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
