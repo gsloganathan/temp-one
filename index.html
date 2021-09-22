@@ -159,6 +159,9 @@
           <strong>Price: &#8377;150</strong>
           <a href="#footer">Pay With Google Pay</a>
         </section>
+        <section class="kindle_link">
+          <a href="https://www.amazon.in/dp/B09FFJX2JH/ref=cm_sw_r_wa_apa_glt_3T6PMZG45R81ESKYXCWM">Click here to buy kindle version</a>
+        </section>
       </div>
       <div class="header-image">
         <h1>இவன் வேற மாதிரி அல்ல</h1>
@@ -336,7 +339,7 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycby33WJnEI1WtzEdgW37dDnqwfoav4KSPk7ztaWYsDz_NLsuqXmH6QLgXHpFnlopZsQ4/exec";
@@ -369,12 +372,12 @@
       }
 
       // tabletop js
-      let publicSpreadsheetUrl =
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pubhtml";
+      var publicSpreadsheetUrl =
+        "https://docs.google.com/spreadsheets/d/1EnfSon3HCyuysb5-XroE-sVcEJHY1BsJAyBYN1IL9M4/edit?usp=sharing";
 
       function init() {
         Tabletop.init({
-          key: "1EnfSon3HCyuysb5-XroE-sVcEJHY1BsJAyBYN1IL9M4",
+          key: publicSpreadsheetUrl,
           callback: showInfo,
           simpleSheet: true,
         });
@@ -394,38 +397,6 @@
         }
       }
       window.addEventListener("DOMContentLoaded", init);
-
-      // document.getElementById("comments").appendChild(
-
-      // document.getElementById("comments").innerHTML =
-      //   "<article><div><strong>" +
-      //   data[1].name +
-      //   ",</strong><span>" +
-      //   data[1].place +
-      //   "</span></div><p>" +
-      //   data[1].message +
-      //   "</p></article>";
-      // document.getElementById("comments").innerHTML =
-      //   "<article><div><strong>" +
-      //   data[2].name +
-      //   ",</strong><span>" +
-      //   data[2].place +
-      //   "</span></div><p>" +
-      //   data[2].message +
-      //   "</p></article>");
-      // // for (var i = 0; i < data.length; i++) {
-      // //   document
-      // //     .getElementById("comments")
-      // //     .appendChild(
-      // //       "<article><div><strong>" +
-      // //         data[i].name +
-      // //         "</strong><span>" +
-      // //         data[i].place +
-      // //         "</span></div><p>" +
-      // //         data[i].message +
-      // //         "</p></article>"
-      // //     );
-      // // }
     </script>
   </body>
 </html>

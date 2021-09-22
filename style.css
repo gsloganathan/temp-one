@@ -100,6 +100,19 @@ header {
   text-decoration: none;
   max-width: 280px;
 }
+.kindle_link{
+  margin-top: 40px;
+}
+.kindle_link a{
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffdfc7;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
 .header-image > h1 {
   display: none;
 }
