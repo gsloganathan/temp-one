@@ -372,19 +372,21 @@
       }
 
       // tabletop js
-      var publicSpreadsheetUrl =
+      var public_spreadsheet_url =
         "https://docs.google.com/spreadsheets/d/1EnfSon3HCyuysb5-XroE-sVcEJHY1BsJAyBYN1IL9M4/edit?usp=sharing";
 
-      function init() {
-        Tabletop.init({
-          key: publicSpreadsheetUrl,
-          callback: showInfo,
-          simpleSheet: true,
-        });
+        function init() {
+        Papa.parse(public_spreadsheet_url, {
+          download: true,
+          header: true,
+          complete: showInfo
+        })
       }
 
+      window.addEventListener('DOMContentLoaded', init)
       var ele = document.getElementById("comments");
-      function showInfo(data, tabletop) {
+      function showInfo(results) {
+        var data = results.data
         for (var i = 0; i < data.length; i++) {
           ele.innerHTML +=
             "<article><div><strong>" +
@@ -395,8 +397,8 @@
             data[i].message +
             "</p></article>";
         }
-      }
-      window.addEventListener("DOMContentLoaded", init);
+        
+      }  
     </script>
   </body>
 </html>
