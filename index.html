@@ -372,8 +372,7 @@
       }
 
       // tabletop js
-      var public_spreadsheet_url =
-        "https://docs.google.com/spreadsheets/d/1EnfSon3HCyuysb5-XroE-sVcEJHY1BsJAyBYN1IL9M4/edit?usp=sharing";
+      var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pub?output=csv";
 
         function init() {
         Papa.parse(public_spreadsheet_url, {
@@ -384,20 +383,15 @@
       }
 
       window.addEventListener('DOMContentLoaded', init)
+
       var ele = document.getElementById("comments");
+
       function showInfo(results) {
         var data = results.data
         for (var i = 0; i < data.length; i++) {
           ele.innerHTML +=
-            "<article><div><strong>" +
-            data[i].name +
-            ",</strong><span>" +
-            data[i].place +
-            "</span></div><p>" +
-            data[i].message +
-            "</p></article>";
+            "<article><div><strong>"+data[i].name+",</strong><span>"+data[i].place+"</span></div><p>"+data[i].message+"</p></article>";
         }
-        
       }  
     </script>
   </body>
