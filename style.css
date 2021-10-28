@@ -102,16 +102,25 @@ header {
 }
 .kindle_link{
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+}
+.kindle_link img{
+  width: 65px;
+  height: auto;
 }
 .kindle_link a{
   display: inline-block;
     padding: 10px 20px;
-    background-color: #ffdfc7;
+    background-color: #c6e6ff;
     border-radius: 8px;
     font-size: 16px;
     text-decoration: none;
     font-weight: 500;
-    color: #000;
+    color: #0400ff;
+    text-decoration: underline;
 }
 .header-image > h1 {
   display: none;
