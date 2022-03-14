@@ -356,6 +356,7 @@
         // .catch(error => console.error('Error!', error.message), alert("Error"))
       });
 
+      
       function myFunction() {
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
@@ -372,9 +373,9 @@
         }
       }
 
-      // tabletop js
+      // ============================================================ table top =============================================
       // var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pub?output=csv";
-      var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pub?gid=645313021&single=true&output=csv";
+      var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_KUjXttZXIlg6nag8NU_o3UvyOJN1RL0PejEA3Ae9oFKXDowZHK13e2QVAOVEGnrcoEYSOC39tNai/pub?output=csv";
 
         function init() {
         Papa.parse(public_spreadsheet_url, {
@@ -392,7 +393,7 @@
         var data = results.data
         for (var i = 0; i < data.length; i++) {
           ele.innerHTML +=
-            "<article><div><strong>"+data[i].Name+",</strong><span>"+data[i].Place+"</span></div><p>"+data[i].Your-Experience+"</p></article>";
+            "<article><div><strong>"+data[i].Name+",</strong><span>"+data[i].Place+"</span></div><p>"+data[i].Message+"</p></article>";
         }
       }  
     </script>
