@@ -199,12 +199,16 @@ header {
 .feedback {
   max-width: 900px;
   margin: 50px auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
+  padding: 0px 40px;
 }
 .feedback > div {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  padding: 0px 40px;
+  margin: 0px auto;
+  margin-top: 35px;
 }
 .feedback > div > h2 {
   font-size: 30px;
@@ -403,11 +407,12 @@ footer .footer-container .qr-code img {
   .book-detials > .book-grid > div {
     width: 45%;
   }
-  .feedback {
-    flex-direction: column;
-  }
   .feedback > div {
     margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .feedback > div > a{
+    margin-top: 30px;
   }
   footer .footer-container h5 {
     font-size: 25px;
