@@ -339,19 +339,19 @@
     ></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycby33WJnEI1WtzEdgW37dDnqwfoav4KSPk7ztaWYsDz_NLsuqXmH6QLgXHpFnlopZsQ4/exec";
-      const form = document.forms["customer-feedback-form"];
+      // const scriptURL =
+      //   "https://script.google.com/macros/s/AKfycby33WJnEI1WtzEdgW37dDnqwfoav4KSPk7ztaWYsDz_NLsuqXmH6QLgXHpFnlopZsQ4/exec";
+      // const form = document.forms["customer-feedback-form"];
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) }).then(
-          (response) => console.log("Success!", response),
-          alert("Thanks for your interest 😃."),
-          form.reset()
-        );
-        // .catch(error => console.error('Error!', error.message), alert("Error"))
-      });
+      // form.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      //   fetch(scriptURL, { method: "POST", body: new FormData(form) }).then(
+      //     (response) => console.log("Success!", response),
+      //     alert("Thanks for your interest 😃."),
+      //     form.reset()
+      //   );
+      //   // .catch(error => console.error('Error!', error.message), alert("Error"))
+      // });
 
       
       function myFunction() {
