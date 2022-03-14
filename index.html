@@ -373,7 +373,8 @@
       }
 
       // tabletop js
-      var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pub?output=csv";
+      // var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pub?output=csv";
+      var public_spreadsheet_url ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Kt5gxqhX8GenYqPBoQuTlgLttlY2NcckaW6ExckG84rMigw3jMh_tSNZ4vqlfmIP7EIThg2b9L4w/pub?gid=645313021&single=true&output=csv";
 
         function init() {
         Papa.parse(public_spreadsheet_url, {
@@ -391,7 +392,7 @@
         var data = results.data
         for (var i = 0; i < data.length; i++) {
           ele.innerHTML +=
-            "<article><div><strong>"+data[i].name+",</strong><span>"+data[i].place+"</span></div><p>"+data[i].message+"</p></article>";
+            "<article><div><strong>"+data[i].Name+",</strong><span>"+data[i].Place+"</span></div><p>"+data[i].Your-Experience+"</p></article>";
         }
       }  
     </script>
