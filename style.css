@@ -522,3 +522,26 @@ footer .footer-container form > button{
 footer .footer-container form > button:hover{
     border: 3px solid #ffffff;
 } */
+
+.video-container{
+  padding: 0px 15px;
+  max-width: 400px;
+  margin: 0px auto;
+  margin-top: 80px;
+}
+.video-container iframe{
+  height: 220px;
+  width: 340px;
+  margin: 0px auto;
+}
+.video-container article{
+  width: 340px;
+  height: 220px;
+  margin: 0px auto;
+}
+.video-container p{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  color: #e49606;
+}
