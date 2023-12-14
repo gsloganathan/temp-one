@@ -14,6 +14,10 @@
   display: none;
 }
 
+#moreEng {
+  display: none;
+}
+
 body {
   background-color: #fffae8;
 }
@@ -100,27 +104,27 @@ header {
   text-decoration: none;
   max-width: 280px;
 }
-.kindle_link{
+.kindle_link {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 360px;
 }
-.kindle_link img{
+.kindle_link img {
   width: 65px;
   height: auto;
 }
-.kindle_link a{
+.kindle_link a {
   display: inline-block;
-    padding: 10px 20px;
-    background-color: #c6e6ff;
-    border-radius: 8px;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 500;
-    color: #0400ff;
-    text-decoration: underline;
+  padding: 10px 20px;
+  background-color: #c6e6ff;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #0400ff;
+  text-decoration: underline;
 }
 .header-image > h1 {
   display: none;
@@ -351,16 +355,21 @@ footer .footer-container .qr-code img {
   font-weight: 400;
   color: rgb(53 1 155);
 }
-.developer{
+.developer {
   background-color: #ff6d6d;
 }
-.developer > div{
+.developer > div {
   max-width: 800px;
   margin: 0px auto;
   padding: 15px 30px;
 }
-.developer > div a{
+.developer > div a {
   color: #0400ff;
+}
+
+.media-container {
+  display: flex;
+  gap: 30px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -397,6 +406,9 @@ footer .footer-container .qr-code img {
   footer .footer-container h5 {
     width: 90%;
   }
+  .media-container {
+    display: block;
+  }
 }
 @media only screen and (max-width: 700px) {
   nav {
@@ -423,7 +435,7 @@ footer .footer-container .qr-code img {
     margin-bottom: 30px;
     flex-direction: column;
   }
-  .feedback > div > a{
+  .feedback > div > a {
     margin-top: 30px;
   }
   footer .footer-container h5 {
@@ -523,25 +535,46 @@ footer .footer-container form > button:hover{
     border: 3px solid #ffffff;
 } */
 
-.video-container{
+
+
+.video-container {
   padding: 0px 15px;
-  max-width: 400px;
+  /* max-width: 400px; */
+  width: fit-content;
   margin: 0px auto;
   margin-top: 80px;
+  /* padding-bottom: 100px; */
 }
-.video-container iframe{
+.video-container iframe {
   height: 220px;
   width: 340px;
   margin: 0px auto;
 }
-.video-container article{
+.video-container article {
   width: 340px;
-  height: 220px;
+  height: 320px;
   margin: 0px auto;
 }
-.video-container p{
-  font-size: 25px;
+.video-container p {
+  font-size: 20px;
   text-align: center;
   font-weight: 500;
   color: #e49606;
+}
+
+.video-container .tamilText {
+  font-weight: 700;
+}
+
+.video-container .AudioThubmnail {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.video-container .vedioThubmnail {
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  /* margin: auto; */
 }
