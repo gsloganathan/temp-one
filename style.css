@@ -435,23 +435,23 @@ footer .footer-container .qr-code img {
 }
 
 .video-container .AudioThubmnail {
-  position: relative;
-  width: fit-content;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 222px;
 }
 
-.video-container .AudioThubmnail .parentDiv {
+/* .video-container .AudioThubmnail .parentDiv {
   height: 220px;
   background-color: rgb(189, 189, 189);
   width: 340px;
-}
+} */
 
-.video-container .vedioThubmnail {
+/* .video-container .vedioThubmnail {
   position: absolute;
   bottom: 0;
   margin-left: 20px;
   /* margin: auto; */
-}
 
 .video-container .vedioThubmnail video {
   width: 300px;
