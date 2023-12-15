@@ -14,11 +14,15 @@
   display: none;
 }
 
+#moreEng {
+  display: none;
+}
+
 body {
-  background-color: #fffae8;
+  background-color: white;
 }
 nav {
-  background-color: #ff5a5a;
+  background-color: #0087ff;
   padding: 15px 0;
 }
 nav > div {
@@ -42,6 +46,11 @@ nav > div > a > svg {
   fill: #fff;
 }
 /* header */
+.tamil-header-parent{
+  padding-top: 50px;
+  background-color: #fffeed;
+}
+
 header {
   max-width: 1300px;
   margin-left: auto;
@@ -55,6 +64,7 @@ header {
   justify-content: center;
 }
 .header-text > h1 {
+  color: #0087ff;
   font-size: 60px;
   font-family: var(--tamil-font);
   font-weight: 700;
@@ -89,10 +99,11 @@ header {
   font-size: 20px;
 }
 .header-text > .a-btn > a {
-  background-color: #ffdfc7;
+  /* background-color: #ffdfc7; */
+  background-color: #00529a;
   padding: 8px 15px;
   border-radius: 30px;
-  color: #000;
+  color: white;
   text-align: center;
   font-size: 20px;
   font-family: var(--normal-font);
@@ -100,30 +111,31 @@ header {
   text-decoration: none;
   max-width: 280px;
 }
-.kindle_link{
+.kindle_link {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 360px;
 }
-.kindle_link img{
+.kindle_link img {
   width: 65px;
   height: auto;
 }
-.kindle_link a{
+.kindle_link a {
   display: inline-block;
-    padding: 10px 20px;
-    background-color: #c6e6ff;
-    border-radius: 8px;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 500;
-    color: #0400ff;
-    text-decoration: underline;
+  padding: 10px 20px;
+  background-color: #c6e6ff;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #0400ff;
+  text-decoration: underline;
 }
 .header-image > h1 {
   display: none;
+  color: #0087ff;
 }
 .header-image .image-slider {
   max-width: 450px;
@@ -154,11 +166,22 @@ header {
   height: auto;
 }
 /* book detials */
+
+
 .book-detials {
-  background-color: #ffecdf;
-  margin-top: 50px;
+  /* background-color: #ffecdf; */
+  background-color: #dff0ff;
+  /* margin-top: 50px; */
   padding: 30px 0;
 }
+.tamil-book-detials{
+  background-color: #fffbcc;
+}
+
+.book-detials-english {
+  margin-top: 50px;
+}
+
 .book-detials h2 {
   text-align: center;
   font-size: 30px;
@@ -351,16 +374,87 @@ footer .footer-container .qr-code img {
   font-weight: 400;
   color: rgb(53 1 155);
 }
-.developer{
-  background-color: #ff6d6d;
+.developer {
+  background-color: #0087ff;
 }
-.developer > div{
+.developer > div {
   max-width: 800px;
   margin: 0px auto;
   padding: 15px 30px;
 }
-.developer > div a{
-  color: #0400ff;
+.developer > div a {
+  color: white;
+}
+
+.media-container {
+  display: flex;
+  gap: 30px;
+}
+.video-container-parent{
+  background-color: #fffeed;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.video-container {
+  /* max-width: 400px; */
+  padding: 0px 15px;
+  width: fit-content;
+  margin: 0px auto;
+  /* padding-bottom: 100px; */
+}
+.video-container iframe {
+  height: 220px;
+  width: 340px;
+  margin: 0px auto;
+}
+.video-container article {
+  width: 340px;
+  height: 320px;
+  margin: 0px auto;
+}
+
+.video-container .voice_book,
+.video-container .review_tube {
+  width: 380px;
+}
+
+.video-container .review_book {
+  width: 480px;
+}
+
+.video-container p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #e49606;
+}
+
+.video-container .tamilText {
+  font-weight: 700;
+}
+
+.video-container .AudioThubmnail {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.video-container .AudioThubmnail .parentDiv {
+  height: 220px;
+  background-color: rgb(189, 189, 189);
+  width: 340px;
+}
+
+.video-container .vedioThubmnail {
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+  /* margin: auto; */
+}
+
+.video-container .vedioThubmnail video {
+  width: 300px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -397,6 +491,40 @@ footer .footer-container .qr-code img {
   footer .footer-container h5 {
     width: 90%;
   }
+  .media-container {
+    display: block;
+  }
+  .kindle_link {
+    width: fit-content;
+    margin: auto;
+    display: block;
+  }
+
+  .kindle_link .kindle_link_first_child {
+    width: fit-content;
+    margin: 20px auto 15px auto;
+  }
+
+  .video-container .voice_book,
+  .video-container .review_tube {
+    width: 300px;
+  }
+
+  .video-container .review_book {
+    width: 300px;
+  }
+  .video-container iframe {
+    width: 300px;
+  }
+
+  .video-container .AudioThubmnail .parentDiv {
+    height: 220px;
+    width: 300px;
+  }
+
+  .video-container .vedioThubmnail video {
+    width: 260px;
+  }
 }
 @media only screen and (max-width: 700px) {
   nav {
@@ -416,6 +544,7 @@ footer .footer-container .qr-code img {
     font-size: 40px;
     text-align: center;
   }
+
   .book-detials > .book-grid > div {
     width: 45%;
   }
@@ -423,7 +552,7 @@ footer .footer-container .qr-code img {
     margin-bottom: 30px;
     flex-direction: column;
   }
-  .feedback > div > a{
+  .feedback > div > a {
     margin-top: 30px;
   }
   footer .footer-container h5 {
@@ -522,26 +651,3 @@ footer .footer-container form > button{
 footer .footer-container form > button:hover{
     border: 3px solid #ffffff;
 } */
-
-.video-container{
-  padding: 0px 15px;
-  max-width: 400px;
-  margin: 0px auto;
-  margin-top: 80px;
-}
-.video-container iframe{
-  height: 220px;
-  width: 340px;
-  margin: 0px auto;
-}
-.video-container article{
-  width: 340px;
-  height: 220px;
-  margin: 0px auto;
-}
-.video-container p{
-  font-size: 25px;
-  text-align: center;
-  font-weight: 500;
-  color: #e49606;
-}
