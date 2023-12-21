@@ -21,11 +21,13 @@
 body {
   background-color: white;
 }
+
 nav {
   background-color: #0087ff;
   padding: 15px 0;
 }
-nav > div {
+
+nav>div {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -34,51 +36,80 @@ nav > div {
   justify-content: space-around;
   align-items: center;
 }
-nav > div > span {
+
+nav>div>span {
   font-size: 25px;
   font-weight: 500;
   color: #fff;
   font-family: var(--heading-font);
 }
-nav > div > a > svg {
+
+nav>div>a>svg {
   max-width: 35px;
   height: auto;
   fill: #fff;
 }
+
 /* header */
-.tamil-header-parent{
+.tamil-header-parent {
   padding-top: 50px;
-  background-color: #fffeed;
+  margin-bottom: 50px;
+  
 }
 
 header {
+  margin-top: 50px;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   padding: 0 30px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
+
+header .see-details-btn {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid;
+  text-align: center;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 22px;
+  background: #0D99FF;
+  border-radius: 10px;
+  padding: 8px 20px;
+  position: absolute;
+  bottom: 0px;
+  text-decoration: none;
+}
+
 .header-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
-.header-text > h1 {
+
+.header-text>h1 {
   color: #0087ff;
   font-size: 60px;
   font-family: var(--tamil-font);
   font-weight: 700;
 }
-.header-text > div {
+
+.header-text>div {
   margin: 35px 0 50px 0;
 }
-.header-text > div > p {
+
+.header-text>div>p {
   font-size: 20px;
   font-family: var(--tamil-font);
   font-weight: 400;
   padding-right: 30px;
 }
-.header-text > div > button {
+
+.header-text>div>button {
   background-color: rgb(255, 237, 155);
   font-size: 12px;
   outline: none;
@@ -87,18 +118,21 @@ header {
   font-weight: 500;
   font-family: var(--normal-font);
 }
-.header-text > .a-btn {
+
+.header-text>.a-btn {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.header-text > .a-btn > strong {
+
+.header-text>.a-btn>strong {
   margin-right: 30px;
   font-family: var(--normal-font);
   font-weight: 500;
   font-size: 20px;
 }
-.header-text > .a-btn > a {
+
+.header-text>.a-btn>a {
   /* background-color: #ffdfc7; */
   background-color: #00529a;
   padding: 8px 15px;
@@ -111,6 +145,7 @@ header {
   text-decoration: none;
   max-width: 280px;
 }
+
 .kindle_link {
   margin-top: 40px;
   display: flex;
@@ -118,10 +153,12 @@ header {
   align-items: center;
   width: 360px;
 }
+
 .kindle_link img {
   width: 65px;
   height: auto;
 }
+
 .kindle_link a {
   display: inline-block;
   padding: 10px 20px;
@@ -133,17 +170,21 @@ header {
   color: #0400ff;
   text-decoration: underline;
 }
-.header-image > h1 {
+
+.header-image>h1 {
   display: none;
   color: #0087ff;
 }
+
 .header-image .image-slider {
   max-width: 450px;
   margin-top: 30px;
 }
+
 .header-image .image-slider img {
   max-width: 450px;
 }
+
 /* whatsapp */
 .whatsapp {
   max-width: 430px;
@@ -155,28 +196,30 @@ header {
   padding: 10px 0;
   border-radius: 50px;
 }
-.whatsapp > small {
+
+.whatsapp>small {
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 18px;
   margin-right: 20px;
 }
-.whatsapp > a > svg {
+
+.whatsapp>a>svg {
   width: 50px;
   height: auto;
 }
+
 /* book detials */
 
 
 .book-detials {
   /* background-color: #ffecdf; */
-  background-color: #dff0ff;
+  background-color: #c7e5ff;
   /* margin-top: 50px; */
   padding: 30px 0;
 }
-.tamil-book-detials{
-  background-color: #fffbcc;
-}
+
+
 
 .book-detials-english {
   margin-top: 50px;
@@ -186,9 +229,11 @@ header {
   text-align: center;
   font-size: 30px;
   font-family: var(--normal-font);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 10px;
+  /* color: rgb(1, 0, 20); */
 }
+
 .book-detials .book-grid {
   display: flex;
   flex-wrap: wrap;
@@ -198,10 +243,12 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
 .book-detials .book-grid div {
   padding: 20px;
 }
-.book-detials > .book-grid > div > .t-1 {
+
+.book-detials>.book-grid>div>.t-1 {
   padding: 1px;
   text-align: center;
   font-size: 20px;
@@ -209,7 +256,8 @@ header {
   font-weight: 400;
   margin: 0;
 }
-.book-detials > .book-grid > div > .t-2 {
+
+.book-detials>.book-grid>div>.t-2 {
   padding: 1px;
   text-align: center;
   font-size: 20px;
@@ -225,7 +273,8 @@ header {
   text-align: center;
   padding: 0px 40px;
 }
-.feedback > div {
+
+.feedback>div {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
@@ -233,13 +282,15 @@ header {
   margin: 0px auto;
   margin-top: 35px;
 }
-.feedback > div > h2 {
+
+.feedback>div>h2 {
   font-size: 30px;
   font-family: var(--heading-font);
   font-weight: 500;
   margin-bottom: 30px;
 }
-.feedback > div > a {
+
+.feedback>div>a {
   text-decoration: none;
   padding: 10px 15px;
   background-color: bisque;
@@ -249,20 +300,23 @@ header {
   border-radius: 30px;
   font-size: 15px;
 }
-.feedback > form {
+
+.feedback>form {
   display: block;
   background-color: #393939;
   border-radius: 30px;
   width: 370px;
   padding: 30px 20px;
 }
-.feedback > form > label {
+
+.feedback>form>label {
   font-size: 20px;
   color: #ffc4a3;
   font-family: var(--normal-font);
   font-weight: 400;
 }
-.feedback > form > input {
+
+.feedback>form>input {
   border-bottom: 3px solid #ffc4a3;
   display: block;
   background-color: #fff;
@@ -270,7 +324,8 @@ header {
   width: 100%;
   outline: none;
 }
-.feedback > form > textarea {
+
+.feedback>form>textarea {
   display: block;
   border-bottom: 3px solid #ffc4a3;
   width: 100%;
@@ -278,7 +333,8 @@ header {
   outline: none;
   background-color: rgba(240, 255, 255, 0);
 }
-.feedback > form > button {
+
+.feedback>form>button {
   background-color: #ffaf8100;
   border: 3px solid #ffc4a3;
   padding: 2px 20px;
@@ -289,18 +345,21 @@ header {
   font-weight: 600;
   cursor: pointer;
 }
-.feedback > form > button:hover {
+
+.feedback>form>button:hover {
   border: 3px solid #fff;
   color: #fff;
 }
+
 input[type="text"] {
   color: white;
 }
 
 /* footer */
 footer {
-  background-color: #ff6d6d;
+  background-color: #0087ff;
 }
+
 footer .footer-container {
   max-width: 1300px;
   padding: 30px 0;
@@ -310,79 +369,93 @@ footer .footer-container {
   justify-content: space-evenly;
   align-items: center;
 }
+
 footer .footer-container h5 {
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 30px;
   line-height: 1.5;
-  color: #ffe0cf;
+  color: #fff;
   width: 40%;
   text-align: center;
 }
+
 footer .footer-container div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 footer .footer-container div p {
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 20px;
-  color: #ffe0cf;
+  color: #fff;
   text-align: center;
   margin: 0;
 }
+
 footer .footer-container div strong {
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 20px;
-  color: #ffe0cf;
+  color: #fff;
   text-align: center;
   margin: 15px 0 0 0;
 }
+
 footer .footer-container .qr-code img {
   width: 150px;
   height: auto;
   border: 3px solid #fff;
   margin: 30px 0;
 }
+
 .comments {
   padding: 0 30px;
   max-width: 1000px;
   margin: 60px auto 30px auto;
 }
-.comments > h4 {
+
+.comments>h4 {
   font-family: var(--heading-font);
   font-size: 33px;
   text-align: center;
   font-weight: 500;
 }
-.comments > article {
+
+.comments>article {
   margin: 30px 0;
 }
-.comments > article > div > strong {
+
+.comments>article>div>strong {
   margin-right: 5px;
   font-size: 15px;
 }
-.comments > article > div > span {
+
+.comments>article>div>span {
   color: rgb(88, 88, 88);
   font-size: 14px;
 }
-.comments > article > p {
+
+.comments>article>p {
   margin-top: 8px;
   font-size: 16px;
   font-weight: 400;
   color: rgb(53 1 155);
 }
+
 .developer {
   background-color: #0087ff;
 }
-.developer > div {
+
+.developer>div {
   max-width: 800px;
   margin: 0px auto;
   padding: 15px 30px;
 }
-.developer > div a {
+
+.developer>div a {
   color: white;
 }
 
@@ -390,7 +463,8 @@ footer .footer-container .qr-code img {
   display: flex;
   gap: 30px;
 }
-.video-container-parent{
+
+.video-container-parent {
   background-color: #fffeed;
   padding-top: 80px;
   padding-bottom: 50px;
@@ -403,11 +477,13 @@ footer .footer-container .qr-code img {
   margin: 0px auto;
   /* padding-bottom: 100px; */
 }
+
 .video-container iframe {
   height: 220px;
   width: 340px;
   margin: 0px auto;
 }
+
 .video-container article {
   width: 340px;
   height: 320px;
@@ -427,7 +503,7 @@ footer .footer-container .qr-code img {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  color: #e49606;
+  color: #00529a;
 }
 
 .video-container .tamilText {
@@ -435,23 +511,23 @@ footer .footer-container .qr-code img {
 }
 
 .video-container .AudioThubmnail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 222px;
+  position: relative;
+  width: fit-content;
+  margin: auto;
 }
 
-/* .video-container .AudioThubmnail .parentDiv {
+.video-container .AudioThubmnail .parentDiv {
   height: 220px;
   background-color: rgb(189, 189, 189);
   width: 340px;
-} */
+}
 
-/* .video-container .vedioThubmnail {
+.video-container .vedioThubmnail {
   position: absolute;
   bottom: 0;
   margin-left: 20px;
   /* margin: auto; */
+}
 
 .video-container .vedioThubmnail video {
   width: 300px;
@@ -461,39 +537,49 @@ footer .footer-container .qr-code img {
   header {
     flex-flow: column-reverse;
     padding: 0 20px;
+    
   }
+
   .header-image {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
   }
-  .header-image > h1 {
+
+  .header-image>h1 {
     display: block;
     font-family: var(--tamil-font);
     font-weight: 700;
     font-size: 50px;
     margin-top: 30px;
   }
-  .header-text > h1 {
+
+  .header-text>h1 {
     display: none;
   }
-  .header-text > div {
+
+  .header-text>div {
     margin-bottom: 30px;
   }
-  .header-text > div > p {
+
+  .header-text>div>p {
     padding-right: 0px;
   }
+
   footer .footer-container {
     width: 90%;
     flex-direction: column;
   }
+
   footer .footer-container h5 {
     width: 90%;
   }
+
   .media-container {
     display: block;
   }
+
   .kindle_link {
     width: fit-content;
     margin: auto;
@@ -513,6 +599,7 @@ footer .footer-container .qr-code img {
   .video-container .review_book {
     width: 300px;
   }
+
   .video-container iframe {
     width: 300px;
   }
@@ -526,35 +613,42 @@ footer .footer-container .qr-code img {
     width: 260px;
   }
 }
+
 @media only screen and (max-width: 700px) {
   nav {
     padding: 10px 0;
   }
-  nav > div > span {
+
+  nav>div>span {
     font-size: 22px;
   }
-  nav > div > a > svg {
+
+  nav>div>a>svg {
     max-width: 32px;
   }
+
   header {
     padding: 0 20px;
   }
 
-  .header-image > h1 {
+  .header-image>h1 {
     font-size: 40px;
     text-align: center;
   }
 
-  .book-detials > .book-grid > div {
+  .book-detials>.book-grid>div {
     width: 45%;
   }
-  .feedback > div {
+
+  .feedback>div {
     margin-bottom: 30px;
     flex-direction: column;
   }
-  .feedback > div > a {
+
+  .feedback>div>a {
     margin-top: 30px;
   }
+
   footer .footer-container h5 {
     font-size: 25px;
     margin-bottom: 25px;
@@ -562,43 +656,51 @@ footer .footer-container .qr-code img {
 }
 
 @media only screen and (max-width: 600px) {
-  .header-image > h1 {
+  .header-image>h1 {
     font-size: 30px;
   }
-  .header-image > .image-slider {
+
+  .header-image>.image-slider {
     max-width: 350px;
     margin-top: 20px;
   }
-  .header-image > .image-slider img {
+
+  .header-image>.image-slider img {
     max-width: 350px;
   }
+
   .whatsapp {
     max-width: 330px;
   }
+
   footer .footer-container h5 {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .header-image > .image-slider {
-    max-width: 300px;
-  }
-  .header-image > .image-slider img {
+  .header-image>.image-slider {
     max-width: 300px;
   }
 
-  .header-text > div > p {
+  .header-image>.image-slider img {
+    max-width: 300px;
+  }
+
+  .header-text>div>p {
     font-size: 16px;
   }
-  .header-text > .a-btn > strong {
+
+  .header-text>.a-btn>strong {
     margin-right: 10px;
     font-size: 18px;
   }
-  .header-text > .a-btn > a {
+
+  .header-text>.a-btn>a {
     font-size: 17px;
   }
-  .whatsapp > a > svg {
+
+  .whatsapp>a>svg {
     width: 45px;
   }
 }
