@@ -69,11 +69,11 @@ header {
   align-items: center;
 }
 
-.see-details-btn {
+header .see-details-btn {
   font-family: 'Inter', sans-serif;
-  border: 1px solid;
+  border: 2px solid;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   color: #FFF;
   font-size: 22px;
   background: #0D99FF;
@@ -82,8 +82,11 @@ header {
   position: absolute;
   bottom: 0px;
   text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+header .see-details-btn:hover{
+  background: transparent;
+  color: #0D99FF;
 }
 
 .header-text {
@@ -542,6 +545,18 @@ footer .footer-container .qr-code img {
     
   }
 
+  header .header-text{
+
+    margin-bottom: 75px;
+
+  }
+
+  header .see-details-btn{
+    font-size: 20px;
+
+    padding: 8px 15px;
+  }
+
   .header-image {
     display: flex;
     flex-flow: column;
@@ -681,6 +696,8 @@ footer .footer-container .qr-code img {
 }
 
 @media only screen and (max-width: 400px) {
+
+  
   .header-image>.image-slider {
     max-width: 300px;
   }
