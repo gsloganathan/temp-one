@@ -82,6 +82,8 @@ header {
   position: absolute;
   bottom: 0px;
   text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header-text {
