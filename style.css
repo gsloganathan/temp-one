@@ -421,7 +421,7 @@ footer .footer-container .qr-code .copy-icon .copy-icon-svg {
 }
 
 footer .footer-container .qr-code .copy-icon .copy-icons-tooltip {
-  /* visibility: hidden; */
+  
   font-size: 15px;
   background-color: #555;
   color: #fff;
@@ -430,10 +430,9 @@ footer .footer-container .qr-code .copy-icon .copy-icons-tooltip {
   padding: 3px;
   position: absolute;
   z-index: 1;
-  right: -95px;
-  top: -20px;
-  width: 100px;
-  /* opacity: 0; */
+  right: 5px;
+  top: -30px;
+  
   transition: opacity 0.3s;
 }
 
